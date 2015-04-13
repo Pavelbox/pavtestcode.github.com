@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<title>Bquad</title>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+		<!--<link rel="apple-touch-icon" href="images/icons/appleicon.png" /> -->
+
+		<!-- include Css -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="js/vendors/bxslider/jquery.bxslider.css">
+		<link rel="stylesheet" href="js/vendors/malihu-scrollbar/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="js/vendors/modernizr/modernizr.custom.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="js/ie//html5shiv.min.js"></script>
+			<script src="js/ie/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="page-header">
+				<a href="index.html" class="logo">
+					<img src="img/logos/logo.png" alt="Logo">
+				</a>
+				<div class="top-menu">
+					<div class="registered">
+						<div class="progress-wrap">
+							<span id="up-level">56</span>
+							<div id="progress"></div>
+							<span id="to-level">57</span>
+						</div>
+						<a href="#" class="login">
+							<i>
+								<img src="img/icons/player-icon.png" alt="">
+							</i>
+							<span>
+								indy.letterhead
+							</span>
+						</a>
+						<a href="#" class="exit">
+							<i>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 41.1 447.7 365.4">
+									<path d="M182.7,379.2c-0.6-1.5-0.8-2.8-0.6-3.9c0.2-1-0.5-1.9-2-2.6s-2.3-1.2-2.3-1.6c0-0.4-1.1-0.7-3.3-0.9
+									c-2.2-0.2-3.3-0.3-3.3-0.3h-3.7h-3.1H82.2c-12.6,0-23.3-4.5-32.3-13.4c-8.9-8.9-13.4-19.7-13.4-32.3v-201c0-12.6,4.5-23.3,13.4-32.3
+									c8.9-8.9,19.7-13.4,32.3-13.4h91.4c2.5,0,4.4-0.6,5.9-1.9c1.4-1.2,2.4-3.1,2.9-5.6c0.5-2.5,0.8-4.7,0.9-6.7c0.1-2,0-4.5-0.1-7.6
+									c-0.2-3-0.3-4.9-0.3-5.7c0-2.5-0.9-4.6-2.7-6.4c-1.8-1.8-3.9-2.7-6.4-2.7H82.2c-22.6,0-42,8-58.1,24.1C8,81.3,0,100.7,0,123.3v201
+									c0,22.6,8,42,24.1,58.1c16.1,16.1,35.5,24.1,58.1,24.1h91.4c2.5,0,4.4-0.6,5.9-1.9c1.4-1.2,2.4-3.1,2.9-5.6c0.5-2.5,0.8-4.7,0.9-6.7
+									c0.1-2,0-4.5-0.1-7.6C182.8,381.8,182.7,379.9,182.7,379.2z M442.2,211L286.9,55.7c-3.6-3.6-7.9-5.4-12.8-5.4
+									c-4.9,0-9.2,1.8-12.9,5.4c-3.6,3.6-5.4,7.9-5.4,12.8v82.2H127.9c-5,0-9.2,1.8-12.8,5.4c-3.6,3.6-5.4,7.9-5.4,12.9v109.6
+									c0,4.9,1.8,9.2,5.4,12.8c3.6,3.6,7.9,5.4,12.8,5.4h127.9v82.2c0,4.9,1.8,9.2,5.4,12.8c3.6,3.6,7.9,5.4,12.9,5.4
+									c4.9,0,9.2-1.8,12.8-5.4l155.3-155.3c3.6-3.6,5.4-7.9,5.4-12.8C447.7,218.9,445.9,214.6,442.2,211z"/>
+								</svg>
+							</i>
+							<span>
+								Выход
+							</span>
+						</a>
+					</div>
+					<div class="language">
+						<div class="dropdown-menu">
+				            <div class="select-language">
+				            	<a>
+				            		<img class="flag" src="img/icons/icon-rus.png" alt="" />
+				            	</a>
+				            </div>
+			                <ul>
+			                    <li>
+				                    <a href="#">
+				                    	<img class="flag" src="img/icons/icon-en.png" alt="" />
+				                    	<span>English</span>
+				                    </a>
+			                    </li>
+		                    	<li>
+				                    <a href="#">
+				                    	<img class="flag" src="img/icons/icon-rus.png" alt="" />
+				                    	<span>Русский</span>
+				                    </a>
+		                    	</li>
+			                </ul>
+				        </div>
+					</div>
+				</div>
+				<ul class="page-menu">
+					<li><a href="#">о сервисе</a></li>
+					<li><a href="#">faq</a></li>
+					<li><a href="#">контакты</a></li>
+					<li><a href="#">магазин</a></li>
+				</ul>
+			</header><!-- /.PAGE-HEADER -->
+			<div class="main-menu">
+				<ul>
+					<li class="active">
+						<span>
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+								<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+								s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+								C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+								c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+								c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+								s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+							</svg>
+							Игровые стримы
+						</span>
+					</li>
+					<li>
+						<a href="#">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="	0px" y="0px"
+								 viewBox="0 0 40.007 40.007" style="enable-background:new 0 0 40.007 40.007;"
+								 xml:space="preserve">
+								<path d="M37.324,10.004c-5.522-9.566-17.755-12.844-27.32-7.32C0.438,8.206-2.84,20.438,2.684,30.004
+								c5.522,9.565,17.754,12.843,27.32,7.32C39.569,31.801,42.848,19.569,37.324,10.004z M28.004,33.859
+								c-7.652,4.419-17.438,1.797-21.856-5.856c-4.419-7.652-1.796-17.438,5.856-21.855c7.652-4.419,17.438-1.797,21.856,5.856
+								C38.278,19.656,35.656,29.441,28.004,33.859z M27.204,19.191l-10.473-6.108c-0.954-0.557-1.724-0.112-1.719,0.992l0.054,12.124
+								c0.005,1.104,0.784,1.553,1.741,1l10.393-6C28.156,20.647,28.158,19.748,27.204,19.191z"/>
+							</svg>
+							Видео-стримы
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="	0px" y="0px"
+								viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+								<path d="M490.594,144.054c-44.403-6.384-91.69-11.008-141.038-13.61L432,48l-32-32L287.721,128.278
+								C277.218,128.094,266.643,128,256,128l0,0L128,0L96,32l97.098,97.098c-60.461,2.121-118.169,7.262-171.693,14.956
+								C7.639,197.917,0,257.43,0,320s7.639,122.083,21.402,175.945C93.223,506.271,172.572,512,256,512
+								c83.428,0,162.775-5.729,234.594-16.055C504.361,442.083,512,382.57,512,320S504.361,197.917,490.594,144.054z M431.946,437.297
+								C378.081,444.18,318.571,448,256,448c-62.571,0-122.083-3.82-175.946-10.703C69.73,401.389,64,361.714,64,320
+								c0-41.715,5.729-81.39,16.054-117.298C133.917,195.819,193.429,192,256,192c62.568,0,122.081,3.819,175.943,10.702
+								C442.271,238.61,448,278.285,448,320C448,361.714,442.271,401.389,431.946,437.297z"/>
+							</svg>
+							Телевидение
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								  viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+								<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+								L112,40.684L81.564,67.186z"/>
+							</svg>
+							Избранные каналы <span class="count">(14)</span>
+						</a>
+					</li>
+					<li>
+						<form action="#" method="post" class="search-form">
+							<input type="text">
+							<input type="submit">
+							<span>
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									 viewBox="0 0 12.805 14.403" xml:space="preserve">
+									<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M12.552,12.568l-2.839-3.49c0.708-0.893,1.078-2.12,1.067-3.723
+									C10.755,1.761,8.946-0.024,5.353,0C1.759,0.026-0.025,1.836,0,5.431c0.025,3.595,1.835,5.378,5.428,5.352
+									c0.944-0.006,1.755-0.144,2.449-0.396l2.929,3.601c0.392,0.483,1.101,0.555,1.583,0.163
+									C12.872,13.757,12.945,13.049,12.552,12.568z M5.39,8.779c-2.238,0-3.357-1.121-3.357-3.359c0-2.24,1.119-3.358,3.357-3.358
+									c2.238,0,3.357,1.118,3.357,3.358C8.748,7.658,7.628,8.779,5.39,8.779z"/>
+								</svg>
+							</span>
+						</form>
+					</li>
+				</ul>
+			</div><!-- /.MAIN-MENU -->
+			<div class="page-content__header">
+				<div class="title">
+					<h1>
+						<i class="country-icon russia"></i>
+						Warlords of Draenor: Level 100 Prideful Gladiator Druid
+					</h1>
+					<a href="#">World of Warcraft: Warlords of Draenor</a>
+				</div>
+				<div class="clearfix">
+					<div class="select-channel col-xs-8">
+						<ul class="tabs">
+						    <li><a href="#tab1">Twitch.tv</a></li>
+						    <li><a href="#tab2">Cybergame.com</a></li>
+						    <li><a href="#tab3">Goodgame.com</a></li>
+						</ul>
+						<a href="#" class="btn">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+								<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+								L112,40.684L81.564,67.186z"/>
+							</svg>
+							Это
+						</a>
+					</div>
+					<div class="channel col-xs-4">
+						<div class="item">
+							<span class="img">
+								<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+							</span>
+							<div class="description">
+								<span class="h4">SuperStream Channel</span>
+								<ul class="rating">
+									<li class="full">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+											<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+											L112,40.684L81.564,67.186z"/>
+										</svg>
+									</li>
+									<li class="full">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+											<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+											L112,40.684L81.564,67.186z"/>
+										</svg>
+									</li>
+									<li class="full">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+											<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+											L112,40.684L81.564,67.186z"/>
+										</svg>
+									</li>
+									<li class="full">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+											<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+											L112,40.684L81.564,67.186z"/>
+										</svg>
+									</li>
+									<li>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+											<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+											L112,40.684L81.564,67.186z"/>
+										</svg>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<span class="complain">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+									<path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10c5.5,0,10-4.5,10-10S17.5,2,12,2z M4,12c0-4.4,3.6-8,8-8c1.8,0,3.5,0.6,4.9,1.7L5.7,16.9C4.6,15.5,4,13.8,4,12z M12,20c-1.8,0-3.5-0.6-4.9-1.7L18.3,7.1C19.4,8.5,20,10.2,20,12C20,16.4,16.4,20,12,20z">
+									</path>
+								</svg>
+								Пожаловаться
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="tab_container">
+					<div class="loading-wrap">
+					    <div id="tab1" class="tab_content">
+							<div class="player-wrap col-xs-8">
+								<div class="player">
+									<iframe src="http://www.twitch.tv/galaxy_alliance/embed" frameborder="0" scrolling="no"></iframe>
+								</div>
+							</div>
+							<div class="stream col-xs-4">
+								<div class="stream-list">
+									<div class="mCustomScrollbar">
+										<ul class="content">
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li class="active">
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">14:30</span>
+														<span class="game">World of Tanks</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">15:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">9:00</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>Warlords of Draenor: Level 100 Prideful Level 100 Prideful</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					    </div>
+					    <div id="tab2" class="tab_content">
+					       	<div class="player-wrap col-xs-8">
+								<div class="player">
+									<iframe src="http://www.twitch.tv/mblshko_billy/embed" frameborder="0" scrolling="no"></iframe>
+								</div>
+							</div>
+							<div class="stream col-xs-4">
+								<div class="stream-list">
+									<div class="mCustomScrollbar">
+										<ul class="content">
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li class="active">
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+											<li>
+												<div class="icon">
+													<img src="img/icons/stream-item-icon.jpg" height="43" width="43" alt="">
+												</div>
+												<div class="description">
+													<div class="name">
+														<span class="time">13:30</span>
+														<span class="game">World of Warcraft</span>
+													</div>
+													<p>BlizzCon 2014 Opening Ceremony</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					    </div>
+					    <div id="tab3" class="tab_content">
+						       Контент 3
+					    </div>
+					    <div id="loading"></div>
+					</div>
+				</div>
+			</div>
+			<div class="banners-slider-wrap">
+				<span id="preloader-banners"></span>
+				<div class="banners-slider">
+					<ul class="bxslider">
+						<li>
+							<img src="img/content/banner.jpg" alt="banner" />
+						</li>
+						<li>
+							<img src="img/content/banner.jpg" alt="banner" />
+						</li>
+						<li>
+							<img src="img/content/banner.jpg" alt="banner" />
+						</li>
+					</ul>
+				</div><!-- /.BANNERS-SLIDER -->
+			</div>
+			<div class="page-content">
+				<div class="row-full-height">
+					<div class="column-shadow col-full-height col-xs-8">
+						<a href="#" class="btn blue fright">Предложить новость</a>
+						<span class="h1">
+							Новости
+						</span>
+						<div class="news-select-list">
+							<ul class="tabs_news">
+								<li class="active"><a href="#general_news">Общие</a></li>
+								<li><a href="#game_news">Игровые</a></li>
+								<li><a href="#site_news">Новости сайта</a></li>
+							</ul>
+						</div>
+
+						<div id="general_news" class="tab_content_news">
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon1.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Wowhead Weekly Episode 17 - Warlords Launch Q&amp;A,
+										Continued Launch Updates, Gazlowe's Realty
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon2.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Wowhead Weekly Episode 17 - Warlords Launch Q&amp;A,
+										Continued Launch Updates, Gazlowe's Realty
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon1.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Wowhead Weekly Episode 17 - Warlords Launch Q&amp;A,
+										Continued Launch Updates, Gazlowe's Realty
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon2.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Wowhead Weekly Episode 17 - Warlords Launch Q&amp;A,
+										Continued Launch Updates, Gazlowe's Realty
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="game_news" class="tab_content_news">
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon2.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Игровая новость
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon1.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Игровая новость 2
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="site_news" class="tab_content_news">
+							<div class="news-item">
+								<a href="#" class="img">
+									<img src="img/icons/news-icon2.jpg" alt="News-icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h2">
+										<span class="icon">
+											<img src="img/icons/game-min-icon.png" alt="">
+										</span>
+										Новость сайта
+									</a>
+									<time datetime="2014-04-13 12:30">13 апреля, 12:30</time>
+									<div class="like">
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path d="M12,21.4L10.6,20C5.4,15.4,2,12.3,2,8.5C2,5.4,4.4,3,7.5,3c1.7,0,3.4,0.8,4.5,2.1C13.1,3.8,14.8,3,16.5,3C19.6,3,22,5.4,22,8.5c0,3.8-3.4,6.9-8.6,11.5L12,21.4z"></path>
+											</svg>
+										</i>
+										<span>30</span>
+									</div>
+									<p>
+										Wowhead Weekly is a World of Warcraft podcast with Wowhead Site
+										Manager Perculia and Olivia, where they discuss all things Warlords of
+										Draenor, Wowhead, and more! This week was a live Q&amp;A show on
+										Wowhead's Twitch Channel - follow us to be notified when we stream! You
+										can also subscribe to our YouTube Channel to see all our video content!
+									</p>
+									<div class="labels">
+										<a href="#">IndyLetterhead </a>
+										<span class="player-level">2390</span>
+										<span>Метки:</span>
+										<a href="#">wowhead</a>,<a href="#">warlords</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<aside class="column-shadow-right col-full-height col-xs-4">
+						<span class="h1">Рекомендуем</span>
+						<ul class="recommendation-list">
+							<li class="recommendation-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/stream-icon.jpg" height="60" width="99" alt="Stream icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">
+										Wowhead Weekly Episode 17 – Warlords Launch Continued...
+									</a>
+									<div class="place">
+										<i class="country-icon russia"></i>
+										<a href="#">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+												<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+												s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+												C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+												c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+												c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+												s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+											</svg>
+											<span>Игровые стримы</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="recommendation-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/stream-icon.jpg" height="60" width="99" alt="Stream icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">
+										Wowhead Weekly Episode 17 – Warlords Launch Continued...
+									</a>
+									<div class="place">
+										<i class="country-icon azerbaijan"></i>
+										<a href="#">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+											<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+											s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+											C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+											c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+											c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+											s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+										</svg>
+										<span>Игровые стримы</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="recommendation-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/stream-icon.jpg" height="60" width="99" alt="Stream icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">
+										Wowhead Weekly Episode 17 – Warlords Launch Continued...
+									</a>
+									<div class="place">
+										<i class="country-icon belarus"></i>
+										<a href="#">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+											<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+											s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+											C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+											c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+											c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+											s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+										</svg>
+										<span>Игровые стримы</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="recommendation-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/stream-icon.jpg" height="60" width="99" alt="Stream icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">
+										Wowhead Weekly Episode 17 – Warlords Launch Continued...
+									</a>
+									<div class="place">
+										<i class="country-icon ukraine"></i>
+										<a href="#">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+												<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+												s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+												C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+												c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+												c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+												s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+											</svg>
+											<span>Игровые стримы</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="recommendation-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/stream-icon.jpg" height="60" width="99" alt="Stream icon">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">
+										Wowhead Weekly Episode 17 – Warlords Launch Continued...
+									</a>
+									<div class="place">
+										<i class="country-icon kyrgyzstan"></i>
+										<a href="#">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 24 23" enable-background="new 0 0 24 23" xml:space="preserve">
+												<path d="M17.7,8c-2.188,0-2.901,1.403-4.615,1.853C13.377,7.898,14.547,6,18,6c4.746,0,6-3.271,6-5c0-0.552-0.447-1-1-1
+												s-1,0.448-1,1c0,0.123-0.046,3-4,3c-5.408,0-6.66,3.709-6.928,5.901C9.234,9.502,8.556,8,6.3,8C3.8,8,0,12.7,0,18.6
+												C0,21.4,1.4,23,2.9,23c3.1,0,3.7-5,9.1-5c5.4,0,6,5,9.1,5c1.5,0,2.9-1.4,2.9-4.4C24,12.7,20.2,8,17.7,8z M18,11.7
+												c0.7,0,1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3S17.3,11.7,18,11.7z M9,16H7v2H5v-2H3v-2h2v-2h2v2h2V16z M14.7,15
+												c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3s-0.6,1.3-1.3,1.3S14.7,15.7,14.7,15z M18,18.3c-0.7,0-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3
+												s1.3,0.6,1.3,1.3S18.7,18.3,18,18.3z M21.3,15c0,0.7-0.6,1.3-1.3,1.3s-1.3-0.6-1.3-1.3s0.6-1.3,1.3-1.3S21.3,14.3,21.3,15z"/>
+											</svg>
+											<span>Игровые стримы</span>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="banner-min">
+							<a href="#">
+								<img src="img/content/banner-min.jpg" height="135" width="398" alt="">
+							</a>
+						</div>
+						<span class="h1">Лучшие каналы</span>
+						<ol class="best-channels-list">
+							<li class="best-channels-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">SuperStream Channel</a>
+									<ul class="rating">
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li>
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="best-channels-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">SuperStream Channel</a>
+									<ul class="rating">
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li>
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="best-channels-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">SuperStream Channel</a>
+									<ul class="rating">
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li>
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="best-channels-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">SuperStream Channel</a>
+									<ul class="rating">
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li>
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="best-channels-list__item">
+								<a href="#" class="img">
+									<img src="img/icons/channel-icon.jpg" height="43" width="43" alt="">
+								</a>
+								<div class="description">
+									<a href="#" class="h4">SuperStream Channel</a>
+									<ul class="rating">
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li class="full">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+										<li>
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 viewBox="0 0 112 106.525" enable-background="new 0 0 112 106.525" xml:space="preserve">
+												<path d="M81.564,67.186l9.043,39.336L56,85.759l-34.607,20.768l9.047-39.336L0,40.684l40.203-3.542L56-0.001l15.797,37.143
+												L112,40.684L81.564,67.186z"/>
+											</svg>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ol>
+					</aside>
+				</div>
+			</div><!-- /.PAGE-CONTENT -->
+			<footer class="page-footer">
+				<div class="info-block">
+					<img src="img/logos/logo-footer.png" height="31" width="114" alt="Logo-footer"><br>
+					<p class="copyright">BQTV &copy; 2014. Все права защищены.</p>
+					<a href="#" class="develop" rel="nofollow" target="blank">Разработка сайта - xxx</a>
+				</div>
+				<ul class="footer-menu">
+					<li><a href="#">О сервисе</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Магазин</a></li>
+				</ul>
+				<div class="socials">
+					<a href="#" class="facebook">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+							 viewBox="22.1 0 52 96.1">
+							<path d="M72.1,0L59.6,0c-14,0-23.1,9.3-23.1,23.7v10.9H24c-1.1,0-2,0.9-2,2v15.8c0,1.1,0.9,2,2,2h12.5v39.9
+							c0,1.1,0.9,2,2,2h16.4c1.1,0,2-0.9,2-2V54.3h14.7c1.1,0,2-0.9,2-2l0-15.8c0-0.5-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6H56.8v-9.2
+							c0-4.4,1.1-6.7,6.8-6.7l8.4,0c1.1,0,2-0.9,2-2V2C74,0.9,73.2,0,72.1,0z"/>
+						</svg>
+					</a>
+					<a href="#" class="google">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+							 viewBox="1.3 0 94.1 96.8">
+							<path d="M62.6,0H39.5C29.2,0,22.1,2.3,15.7,7.6c-5,4.4-8.1,10.7-8.1,16.9c0,9.6,7.3,19.8,20.9,19.8
+							c1.3,0,2.8-0.1,4-0.3l-0.2,0.5c-0.5,1.3-1.1,2.5-1.1,4.5c0,3.8,1.8,6.1,3.6,8.3l0.2,0.3l-0.4,0c-5.6,0.4-16,1.1-23.7,5.8
+							c-9,5.4-9.7,13.1-9.7,15.4c0,9,8.4,18.1,27.1,18.1c21.8,0,33.1-12,33.1-23.9c0-8.8-5.1-13.1-10.6-17.7l-4.6-3.6
+							c-1.4-1.2-3.2-2.6-3.2-5.4c0-2.7,1.8-4.4,3.3-6l0.2-0.2c5-3.9,10.6-8.4,10.6-18c0-9.7-6-14.6-8.9-17H56c0.1,0,0.2,0,0.3-0.1l6.6-4.2
+							c0.2-0.1,0.3-0.3,0.2-0.6C63,0.1,62.8,0,62.6,0z M34.6,91.5c-13.3,0-22.2-6.2-22.2-15.4c0-6,3.6-10.4,10.8-13c5.7-1.9,13.2-2,13.2-2
+							c1.3,0,1.9,0,2.9,0.1c9.3,6.6,13.7,10.1,13.7,16.7C53.1,86.3,46,91.5,34.6,91.5z M34.5,40.8c-11.1,0-15.8-14.6-15.8-22.5
+							c0-4,0.9-7,2.8-9.4c2-2.5,5.5-4.2,8.8-4.2c10.2,0,15.9,13.7,15.9,23.2c0,1.5,0,6.1-3.1,9.2C40.9,39.3,37.5,40.8,34.5,40.8z M95,45.2
+							H82.8V33.1c0-0.3-0.2-0.5-0.5-0.5h-5.2c-0.3,0-0.5,0.2-0.5,0.5v12.1H64.5c-0.3,0-0.5,0.2-0.5,0.5V51c0,0.3,0.2,0.5,0.5,0.5h12.1
+							v12.2c0,0.3,0.2,0.5,0.5,0.5h5.2c0.3,0,0.5-0.2,0.5-0.5V51.5H95c0.3,0,0.5-0.2,0.5-0.5v-5.3C95.5,45.4,95.3,45.2,95,45.2z"/>
+						</svg>
+					</a>
+					<a href="#" class="vk">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							 viewBox="0 114.3 532.3 303.7">
+							<path d="M472,241.3c7.6-9.8,13.6-17.6,18-23.6c32-42.5,45.8-69.6,41.6-81.5l-1.7-2.8c-1.1-1.7-4-3.2-8.6-4.6
+							c-4.6-1.4-10.5-1.6-17.7-0.7l-79.8,0.6c-1.8-0.2-3.7-0.1-5.5,0.1c-1.8,0.3-3,0.6-3.6,0.8c-0.6,0.3-1,0.5-1.4,0.7l-1.1,0.8
+							c-0.9,0.6-1.9,1.5-3,2.9c-1.1,1.4-2,3-2.8,4.9c-8.7,22.4-18.6,43.1-29.7,62.4c-6.8,11.5-13.1,21.4-18.8,29.8
+							c-5.7,8.4-10.5,14.6-14.4,18.6c-3.9,4-7.4,7.2-10.5,9.6c-3.1,2.4-5.5,3.4-7.2,3.1c-1.7-0.4-3.2-0.7-4.7-1.1
+							c-2.6-1.7-4.7-3.9-6.2-6.8c-1.6-2.9-2.6-6.5-3.2-10.8c-0.6-4.3-0.9-8.1-1-11.2c-0.1-3.1,0-7.6,0.1-13.3c0.2-5.7,0.3-9.6,0.3-11.6
+							c0-7,0.1-14.6,0.4-22.9c0.3-8.2,0.5-14.7,0.7-19.5c0.2-4.8,0.3-9.9,0.3-15.2c0-5.3-0.3-9.6-1-12.6c-0.6-3-1.6-6-2.9-8.9
+							c-1.3-2.9-3.2-5.1-5.7-6.6c-2.5-1.6-5.6-2.8-9.3-3.7c-9.8-2.2-22.3-3.4-37.4-3.6c-34.4-0.4-56.5,1.9-66.2,6.7
+							c-3.9,2-7.4,4.8-10.5,8.3c-3.3,4.1-3.8,6.3-1.4,6.6c11.1,1.7,18.9,5.6,23.6,11.9l1.7,3.3c1.3,2.4,2.6,6.7,3.9,12.8
+							c1.3,6.1,2.1,12.8,2.5,20.2c0.9,13.5,0.9,25,0,34.6c-0.9,9.6-1.8,17.1-2.6,22.4c-0.8,5.4-2.1,9.7-3.7,13c-1.7,3.3-2.8,5.4-3.3,6.1
+							c-0.6,0.7-1,1.2-1.4,1.4c-2.4,0.9-4.9,1.4-7.5,1.4c-2.6,0-5.7-1.3-9.4-3.9c-3.7-2.6-7.5-6.1-11.5-10.7c-4-4.5-8.5-10.9-13.4-19
+							c-5-8.1-10.2-17.7-15.5-28.8l-4.4-8c-2.8-5.2-6.6-12.7-11.4-22.6s-9.1-19.4-12.7-28.7c-1.5-3.9-3.7-6.8-6.7-8.9l-1.4-0.8
+							c-0.9-0.7-2.4-1.5-4.4-2.4c-2-0.8-4.2-1.4-6.4-1.8l-75.9,0.6c-7.8,0-13,1.8-15.8,5.3l-1.1,1.7c-0.6,0.9-0.8,2.4-0.8,4.4
+							c0,2,0.6,4.5,1.7,7.5c11.1,26.1,23.1,51.2,36.2,75.4c13,24.2,24.3,43.7,34,58.5c9.6,14.8,19.4,28.7,29.4,41.9s16.6,21.5,19.8,25.2
+							c3.2,3.7,5.8,6.5,7.6,8.3l6.9,6.7c4.4,4.4,10.9,9.7,19.5,15.9c8.6,6.2,18.1,12.3,28.6,18.3c10.4,6,22.6,10.9,36.4,14.7
+							c13.9,3.8,27.3,5.3,40.5,4.6h31.9c6.5-0.6,11.4-2.6,14.7-6.1l1.1-1.4c0.7-1.1,1.4-2.8,2.1-5.1c0.6-2.3,1-4.9,1-7.6
+							c-0.2-7.9,0.4-15.1,1.8-21.5c1.4-6.4,3-11.2,4.7-14.4c1.8-3.2,3.7-6,6-8.2c2.2-2.2,3.8-3.5,4.7-4c0.9-0.5,1.7-0.8,2.2-1
+							c4.4-1.5,9.6,0,15.7,4.3c6,4.4,11.6,9.7,16.9,16.1c5.3,6.4,11.6,13.5,19,21.5c7.4,7.9,13.9,13.9,19.4,17.7l5.5,3.3
+							c3.7,2.2,8.5,4.2,14.4,6.1c5.9,1.8,11.1,2.3,15.5,1.4l71-1.1c7,0,12.5-1.1,16.4-3.5c3.9-2.3,6.2-4.9,6.9-7.6
+							c0.7-2.8,0.8-5.9,0.1-9.4c-0.6-3.5-1.3-6-1.9-7.3c-0.6-1.4-1.3-2.5-1.8-3.5c-9.2-16.6-26.9-37.1-52.9-61.3l-0.6-0.6l-0.3-0.3
+							l-0.3-0.3h-0.3c-11.8-11.3-19.3-18.9-22.4-22.7c-5.7-7.4-7-14.9-3.9-22.4C449.3,271.9,457.6,259.8,472,241.3z"/>
+						</svg>
+					</a>
+				</div>
+			</footer><!-- /.PAGE-FOOTER -->
+		</div><!-- /.CONTAINER -->
+
+		<!-- include JavaScript -->
+    	<script src="js/jquery/jquery-1.11.1.min.js"></script>
+    	<script src="js/vendors/bxslider/jquery.bxslider.js"></script>
+		<script src="js/vendors/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    	<script src="js/vendors/validate/jquery.validate.min.js"></script>
+    	<script src="js/vendors/jTruncate/jTruncate.min.js"></script>
+    	<script src="js/vendors/spin/spin.js"></script>
+    	<script src="js/vendors/goalprogress/goalProgress.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

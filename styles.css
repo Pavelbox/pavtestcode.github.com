@@ -1,0 +1,123 @@
+
+html, body, h1, h2, h3, h4, h5, h6, p, em, strong, abbr, acronym, blockquote, q, cite, ins, del, dfn, a, div, span, pre, hr, address, br, b, i, sub, sup, big, small, tt, table, tr, caption, thead, tbody, tfoot, col, colgroup, form, input, label, textarea, button, fieldset, legend, select, option, optiongroup, ul, ol, dl, dt, dd, code, var, kdb, samp, img, object, param, map, area, bdo, iframe { padding:0; margin:0; }
+fieldset {border:0;}
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+img {border:0;}
+input {vertical-align:middle; font:12px Arial, Helvetica, sans-serif;}
+textarea { padding:3px 5px; background:#fff; border:1px solid #cfd4da; font:12px Arial, Helvetica, sans-serif; color:#000;}
+select { background:#fff; border:1px solid #cfd4da; font:12px Arial, Helvetica, sans-serif; color:#000;}
+body { overflow:hidden; position:relative; background:#f1f1f1 url("img/body-bg.png") repeat; font:16px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#494949; }
+a { color:#00b4e7; text-decoration:underline; cursor:pointer; outline:none;}
+a:hover { text-decoration:none;}
+
+
+
+/* nav */
+#nav {
+	position:fixed; top:0; left:50%; width:300px; margin-left:-150px;
+	filter:alpha(opacity=50); opacity: 0.5; z-index:50;
+	-moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s;
+	text-align:center;
+	}
+#nav:hover {filter:alpha(opacity=85); opacity: 0.85; }
+#nav ul { display:inline-block; padding:4px 10px; background-color:#7e7e7e; -moz-border-radius:0 0 4px 4px; border-radius:0 0 4px 4px; list-style:none;} 
+#nav ul li { display:inline-block; padding:0 6px;}
+#nav ul li a { -moz-transition: 0.2s; -webkit-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; font-size:24px; color:#dedede;}
+#nav ul li a img:hover { 
+		 -moz-transform: rotate(360deg);
+   		 -ms-transform: rotate(360deg);
+   		 -webkit-transform: rotate(360deg);
+   		 -o-transform: rotate(360deg);
+   		 transform: rotate(360deg);
+   		 -webkit-transition: -webkit-transform 2s;
+   		 -moz-transition: -moz-transform 2s;
+   		 -ms-transition: -moz-transform 2s;
+   		 -o-transition: -o-transform 2s;
+   		 transition: transform 2s;
+}
+
+/* xy */
+#xy { position:absolute; width:3000px; height:3000px; background:#CCC;
+		border-radius:6000px;
+		-moz-border-radius: 6000px;
+		-webkit-border-radius: 6000px;
+		behavior: url("script/ie-css3.htc");}
+#xy > article { position:absolute;}
+
+/* xyBox */
+.xyBox { padding:20px 20px 24px; background:#fff; border:solid 2px #f3f3f3; border-radius:10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+.xyBox:hover{box-shadow: 0 0 18px;}
+.xyBox h1 { margin-bottom:15px; font:21px 'Lobster', cursive; color:#494949;}
+.xyBox ul { margin:10px 0 10px 15px;}
+.xyBox ul li { margin-bottom:4px; list-style:disc outside; }
+
+/* vcard */
+#vcard { width:400px;}
+#vcard .job { margin-bottom:0;}
+#vcard .name { margin-bottom:20px; 	font:24px 'Lobster', cursive; color:#00b4e7;}
+#vcard .row { padding: 0 0 2px 100px; }
+#vcard .row .label { float:left; width:100px; margin-left:-100px; color:#828282;}
+
+
+/* portfolio */
+#portfolio { width:450px; }
+
+/* feedback */
+#feedback { width:400px; }
+#formBody{
+	background-color: #eeeeee;
+	color: 333333;
+	border: solid 1px #dddddd;
+	width: 394px;
+	font-size: 14px;
+	padding-bottom: 10px;}
+.formBodyInput{
+	background-color: #ffffff;
+	color: 000000;border: solid; 
+	border-width:1px;
+	border-color: #dddddd;
+	font-size: 13.3333px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 16px;
+	width: 367px;}
+#formBody textarea{
+	background-color: #ffffff;
+	color: #000000;
+	border: solid;
+	border-width:1px;
+	border-color: #dddddd;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 98px;
+	width: 357px;
+	resize: none;
+}
+.input-header{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;}
+
+input:focus {
+    -webkit-box-shadow: 0px 0px 5px #007eff;
+    -moz-box-shadow: 0px 0px 5px #007eff;
+    box-shadow: 0px 0px 5px #007eff;
+}
+textarea:focus {
+	-webkit-box-shadow: 0px 0px 5px #007eff;
+    -moz-box-shadow: 0px 0px 5px #007eff;
+    box-shadow: 0px 0px 5px #007eff;
+}
+
+
+/* arGame */
+#arGame { width:200px; text-align:center; }
+#arGame .t1 { font:24px 'Lobster', cursive; color:#00b4e7;}
+
+
+
+/* */
+.clear { clear:both;}
+.fleft {float:left;}
+.fright {float:right !important;}

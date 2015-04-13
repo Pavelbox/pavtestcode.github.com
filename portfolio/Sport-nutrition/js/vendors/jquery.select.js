@@ -1,0 +1,63 @@
+jQuery(document).ready(function($) {
+
+	// mobile select
+	init_custom_selects_mobile();
+
+	// select
+	$('.select-custom').each(function(){
+		var $this = $(this), numberOfOptions = $(this).children('option').length;
+  
+		$this.addClass('select-hidden'); 
+		$this.wrap('<div class="select"></div>');
+		$this.after('<div class="select-styled"></div>');
+
+		var $styledSelect = $this.next('div.select-styled');
+		$styledSelect.text($this.children('option').eq(0).text());
+  
+		var $list = $('<ul />', {
+			'class': 'select-options'
+		}).insertAfter($styledSelect);
+  
+		for (var i = 0; i < numberOfOptions; i++) {
+			$('<li />', {
+				text: $this.children('option').eq(i).text(),
+				rel: $this.children('option').eq(i).val()
+			}).appendTo($list);
+		}
+  
+		var $listItems = $list.children('li');
+		
+		$styledSelect.click(function(e) {
+			e.stopPropagation();
+			$('div.select-styled.active').each(function(){
+				$(this).removeClass('active').next('ul.select-options').hide();
+			});
+			$(this).toggleClass('active').next('ul.select-options').toggle();
+		});
+		
+		$listItems.click(function(e) {
+			e.stopPropagation();
+			$styledSelect.text($(this).text()).removeClass('active');
+			$this.val($(this).attr('rel'));
+			$list.hide();
+			//console.log($this.val());
+		});
+		
+		$(document).click(function() {
+			$styledSelect.removeClass('active');
+			$list.hide();
+		});
+
+	});
+
+
+});
+
+function init_custom_selects_mobile() {
+	$('.custom-select-mobile').each(function () {
+		$(this).wrap('<div id="select_' + $(this).attr('id') + '" class="select_wrapper"></div>');
+		$('#select_' + $(this).attr('id')).append('<span>' + $('option:selected', this).text() + '</span><em class="wrap_arrow"><em class="arrow">&nbsp;</em></em>');
+	}).change(function () {
+		$('span', '#select_' + $(this).attr('id')).text($('option:selected', this).text());
+	});
+}
