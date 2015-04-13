@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pavel Kriakvin - html-coder.</title>
+	<meta name="description" content="Pavel Kriakvin - html-coder." />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<!--[if lt IE 9]>
+		<script src="script/html5ieFIX.js"></script>		
+	<![endif]-->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="script/script.js"></script>
+	<script type="text/javascript" src="script/feedbackform.js"></script>
+</head>
+<body>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#vcard" title="Info"><img src="img/1.png"></a></li>
+		<li><a href="#portfolio" title="Portfolio"><img src="img/2.png"></a></li>
+		<li><a href="#feedback" title="Feedback form"><img src="img/3.png"></a></li>
+		<li><a href="#arGame" title="Hello,world"><img src="img/4.png"></a></li>
+	</ul>
+</nav>
+
+<section id="xy">
+	<article id="vcard" class="xyBox">
+		<h1 class="job">html-coder</h1>
+		<div class="name">Pavel Kriakvin</div>
+		<div class="row email"><span class="label">mail:</span> pavel.kriakvin@gmail.com</div>
+		<div class="row mobile"><span class="label">mobile:</span> +37529 8033330</div>
+	</article>
+	<article id="portfolio" class="xyBox">
+		<h1>Portfolio</h1>
+		<ul>
+			<li><a href="portfolio/bq-tv/index.html" target="_blank">Bq-tv</a></li>
+			<li><a href="portfolio/Hingston/index.html" target="_blank">Hingston</a></li>
+			<li><a href="portfolio/House/index.html" target="_blank">House</a></li>
+			<li><a href="portfolio/fort-fireplaces/index.html" target="_blank">Fort-fireplaces</a></li>
+			<li><a href="portfolio/Electrovector/index.html" target="_blank">Electrovector</a></li>
+			<li><a href="portfolio/Snowball/index.html" target="_blank">Snowball</a>(частично)</li>
+			<li><a href="portfolio/Sport-nutrition/index.html" target="_blank">Sport-nutrition</a>(частично)</li>
+			<li><a href="http://ru.pokerdiscover.com/" target="_blank">Pokerdiscover</a>(частично)</li>
+			<li><a href="http://denten.by/" target="_blank">Denten.by</a></li>
+			<li><a href="http://smeteo.net/" target="_blank">Smeteo.net</a></li>
+			<li><a href="http://univermagbelarus.by/" target="_blank">Univermag-belarus</a></li>
+			<li><a href="http://dengi5.by/" target="_blank">Dengi5.by</a></li>
+			<li><a href="http://dio.by/" target="_blank">Dio.by</a></li>
+			<li><a href="http://luxorta.ru/" target="_blank">Luxorta.ru</a></li>
+			<li><a href="http://agrox.by/" target="_blank">Agrox.by</a></li>
+			<li><a href="http://biglombard.by/" target="_blank">Biglombard.by</a></li>
+			<li><a href="http://domcvetov.by/" target="_blank">Domcvetov.by</a></li>
+			<li><a href="http://aksinterier.com/" target="_blank">Aks-interier.com</a></li>
+		</ul>
+	</article>
+	<article id="feedback" class="xyBox">
+		<h1>Feedback form</h1>
+		<div id="formBody">
+		<form action="script/sendmail.php" method="post" id="callbackForm">
+		<div class="input-header">Your name</div><input type="text" maxlength="100" name="name" id="name" class="formBodyInput" />
+		<div class="input-header">Your e-mail</div><input type="text" maxlength="100" name="email" id="email" class="formBodyInput" />
+		<div class="input-header">Message</div><textarea name="msg" id="msg" ></textarea></form>
+		<div style="margin-left:10px; margin-right: 10px; margin-bottom: 10px; margin-top: 4px;">
+		<button onclick="sendEMail()" style="margin-top: 6px;">Send</button></div></div>
+	
+	</article>
+	<article id="arGame" class="xyBox">
+		<p class="t1">Hello,world...</p>
+	</article>
+</section>
+
+</body>
+</html>
